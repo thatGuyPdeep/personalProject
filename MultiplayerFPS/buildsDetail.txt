@@ -1,0 +1,21 @@
+23-June-2019
+Build 1:
+Environment(Ground and Obstacles)
+Camera
+Player Camera
+Player, Player Model
+Gun, Gun Model
+Materials for all models
+
+Scripts:
+PlayerMotor - for movement
+PlayerController - for controlling the player
+
+Camera Rotation - 
+Along x-axis:
+	rotate the player
+Along y-axis:
+	only rotate the camerea not the player
+
+(don't wanna mess with y-axis because it will mess with the movement of the player(because player will rotate with the camera in y-axis)).
+
