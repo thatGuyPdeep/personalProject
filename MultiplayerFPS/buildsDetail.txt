@@ -1,11 +1,16 @@
+Build 1
 23-June-2019
-Build 1:
+
 Environment(Ground and Obstacles)
 Camera
 Player Camera
 Player, Player Model
 Gun, Gun Model
 Materials for all models
+
+Components:
+Rigidbody
+
 
 Scripts:
 PlayerMotor - for movement
@@ -18,4 +23,19 @@ Along y-axis:
 	only rotate the camerea not the player
 
 (don't wanna mess with y-axis because it will mess with the movement of the player(because player will rotate with the camera in y-axis)).
+
+Build 2
+27-June-2019
+
+Spawning Points
+Network Manager
+Network Identity
+
+Bugs:
+1. An extra camera was active in game mode.
+2. Both the player was reponding to the same motor controller at the same time.
+
+Fix:
+Add DisableComponents() funtion to the player setup to disabled player motor, player controller, camera and audio listener.
+
 
