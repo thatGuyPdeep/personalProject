@@ -39,3 +39,17 @@ Fix:
 Add DisableComponents() funtion to the player setup to disabled player motor, player controller, camera and audio listener.
 
 
+Build 3
+02-July-2019
+
+Sync Networking 
+Network transform
+
+Build 4
+04-July-2019
+
+Added Spring physics to movement
+Clamp the camera rotation
+Add thruster to Fly
+Made changes to PlayerController and PlayerMotor scripts
+Add configurable joint
