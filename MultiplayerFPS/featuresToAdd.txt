@@ -1,4 +1,3 @@
-Flying
 Shooting
 Damage
 Respawn

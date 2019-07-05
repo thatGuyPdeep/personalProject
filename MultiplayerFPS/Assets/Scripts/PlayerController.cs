@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     private float jointMaxForce = 40f;
 
 
-    //reference
+    //Reference
     private PlayerMotor motor;
     private ConfigurableJoint joint;
 
