@@ -485,6 +485,7 @@ GameObject:
   - component: {fileID: 481800008911286008}
   - component: {fileID: 7164656416429289180}
   - component: {fileID: -4405244108877010395}
+  - component: {fileID: -843136092746537914}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -774,7 +775,7 @@ MonoBehaviour:
   cam: {fileID: 2993131349513461671}
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 567
 --- !u!114 &-4405244108877010395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,8 +789,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Glock
-  damage: 10
+  damage: 40
   range: 100
+--- !u!114 &-843136092746537914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993131350748860979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe502bbdfcb2924aab31908517aea0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  disableOnDeath:
+  - {fileID: 2993131350748860981}
+  - {fileID: 7164656416429289180}
 --- !u!1 &2993131350814629327
 GameObject:
   m_ObjectHideFlags: 0
