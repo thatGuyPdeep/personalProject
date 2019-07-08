@@ -53,3 +53,25 @@ Clamp the camera rotation
 Add thruster to Fly
 Made changes to PlayerController and PlayerMotor scripts
 Add configurable joint
+
+Build 5
+05-July-2019
+
+Add Shooting Mechanics
+Apply RayCast
+Do collision checking. 
+Notify server that object has been hit. So, the server send message to all client.
+Add layer mask foe localPlayer and remotePlayer.
+
+Build 6
+06-July-2019
+
+Apply damage to the player.
+Removed registerPlayer() method from GameSetup.
+Sync Player.cs so if the player got hit will update to its all client and their UI.
+
+Build 7
+07-July-2019
+
+Apply Respawn
+Destroy the player by implementing Die() method
