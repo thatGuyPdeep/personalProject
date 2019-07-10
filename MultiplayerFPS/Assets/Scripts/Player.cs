@@ -54,7 +54,7 @@ public class Player : NetworkBehaviour
 
         currentHealth -= _amount;
 
-        Debug.Log(transform.name + "now has " + currentHealth + " health");
+        Debug.Log(transform.name + " now has " + currentHealth + " health");
 
         if(currentHealth <= 0)
         {
@@ -90,7 +90,7 @@ public class Player : NetworkBehaviour
         Transform _spawnPoint = NetworkManager.singleton.GetStartPosition();
         transform.position = _spawnPoint.position;
         transform.rotation = _spawnPoint.rotation;
-        Debug.Log(transform.name + "Player respawned");
+        Debug.Log(transform.name + " respawned");
     }
 
     public void SetDefaults()

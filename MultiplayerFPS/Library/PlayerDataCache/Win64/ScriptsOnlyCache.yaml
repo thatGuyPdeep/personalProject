@@ -8,8 +8,21 @@ ScriptsOnlyBuild:
     - PlayerSetup
     - PlayerShoot
     - PlayerWeapon
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
+    com.unity.multiplayer-hlapi.Editor.dll:
+    - UnityEditor.NetworkBehaviourInspector
+    - UnityEditor.NetworkIdentityEditor
+    - UnityEditor.NetworkTransformChildEditor
+    - UnityEditor.NetworkTransformEditor
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
@@ -19,7 +32,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Networking.NetworkTransform
     - UnityEngine.Networking.NetworkTransformChild
   sceneClasses:
-    Assets/build7.unity:
+    Assets/build8.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -42,9 +55,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -65,17 +84,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10432}
     - Class: 114
-      Script: {instanceID: 11068}
+      Script: {instanceID: 10678}
+    - Class: 114
+      Script: {instanceID: 11012}
     - Class: 114
       Script: {instanceID: 11074}
     - Class: 114
-      Script: {instanceID: 11086}
+      Script: {instanceID: 11080}
     - Class: 114
-      Script: {instanceID: 11214}
+      Script: {instanceID: 11092}
     - Class: 114
-      Script: {instanceID: 12452}
-    - Class: 114
-      Script: {instanceID: 12458}
+      Script: {instanceID: 11220}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -1157,6 +1176,12 @@ ScriptsOnlyBuild:
     className: NetworkBehaviour
   - hash:
       serializedVersion: 2
+      Hash: 572df311c0d2c4a9e6f7f245c07e7c18
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Player
+  - hash:
+      serializedVersion: 2
       Hash: ee0cef6caaac8ae485bfa82f000f0f7b
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1197,6 +1222,12 @@ ScriptsOnlyBuild:
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
     className: NetworkAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: e4d9631682f212a20c7fa404067bd205
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: 5372ed2ce39229b1ac910757999a8be2
@@ -1659,19 +1690,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: e4d9631682f212a20c7fa404067bd205
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameManager
-  - hash:
-      serializedVersion: 2
-      Hash: 572df311c0d2c4a9e6f7f245c07e7c18
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Player
   platform: 19
   scenePathNames:
-  - Assets/build7.unity
+  - Assets/build8.unity
   playerPath: D:/personalProject/MultiplayerFPS/Builds/MultiplayerFPS.exe

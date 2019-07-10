@@ -409,6 +409,8 @@ GameObject:
   - component: {fileID: 7164656416429289180}
   - component: {fileID: -4405244108877010395}
   - component: {fileID: -843136092746537914}
+  - component: {fileID: 6665541262135852635}
+  - component: {fileID: 1092707740328599986}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -544,6 +546,7 @@ MonoBehaviour:
   - {fileID: 2993131349513461671}
   - {fileID: 2993131349513461668}
   - {fileID: 7164656416429289180}
+  - {fileID: 6665541262135852635}
   remoteLayerName: RemotePlayer
 --- !u!114 &-3473245628435593866
 MonoBehaviour:
@@ -598,7 +601,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 2.8, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 2.8, z: -0.29}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -730,6 +733,45 @@ MonoBehaviour:
   disableOnDeath:
   - {fileID: 2993131350748860981}
   - {fileID: 7164656416429289180}
+--- !u!95 &6665541262135852635
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993131350748860979}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0b50177da65ad75419773f71353cebbf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1092707740328599986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993131350748860979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e4fc1de7aae047a4bf138b9498c9b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Target: {fileID: 2711844421442216095}
+  m_ChildIndex: 1
+  m_SendInterval: 0.1
+  m_SyncRotationAxis: 1
+  m_RotationSyncCompression: 0
+  m_MovementThreshold: 0.001
+  m_InterpolateRotation: 0.3
+  m_InterpolateMovement: 0
 --- !u!1 &2993131350814629327
 GameObject:
   m_ObjectHideFlags: 0
