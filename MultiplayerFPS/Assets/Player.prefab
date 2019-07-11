@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2993131349513461666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2993131350814629326}
@@ -64,7 +64,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 823
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -548,6 +548,10 @@ MonoBehaviour:
   - {fileID: 7164656416429289180}
   - {fileID: 6665541262135852635}
   remoteLayerName: RemotePlayer
+  dontDrawLayerName: DontDraw
+  playerGraphics: {fileID: 2993131350229921400}
+  playerUIPrefab: {fileID: 7569852114797627414, guid: db2b6cfb87650d84eb10fa5552bedbca,
+    type: 3}
 --- !u!114 &-3473245628435593866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -796,7 +800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2993131350814629327}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.148, y: -0.03, z: -0.343}
+  m_LocalPosition: {x: 0.148, y: -0.03, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2993131350074545058}
