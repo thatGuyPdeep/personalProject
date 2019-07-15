@@ -1,5 +1,3 @@
-Crosshair
-GunGFX
 RapidFire
 Reload
 Fuel

@@ -75,3 +75,26 @@ Build 7
 
 Apply Respawn
 Destroy the player by implementing Die() method
+
+Build 8
+08-July-2019
+
+Added player model
+Added animation to the thruster
+Add animation through the  blend tree
+
+Build 9
+08-July-2019
+
+Added Player GUI(crosshair)
+Disable the graphic for the localplayer in game scene.
+
+Build 10
+08-July-2019
+
+Added gun model and its material.
+Setting proper camera to render the weapon for FOV.
+Prevent weapon from clipping object
+
+Build 11
+08-July-2019
