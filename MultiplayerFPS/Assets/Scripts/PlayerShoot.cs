@@ -52,7 +52,10 @@ public class PlayerShoot : NetworkBehaviour
     [Client]
     void Shoot()
     {
-        Debug.Log("SHOOT!");
+        if (!isLocalPlayer)
+        {
+            return;
+        }
 
         RaycastHit _hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, currentWeapon.range, mask))

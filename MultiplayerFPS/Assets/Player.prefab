@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 6665541262135852635}
   - component: {fileID: 1092707740328599986}
   - component: {fileID: 6752911407209905091}
+  - component: {fileID: 332254714260169540}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -303,7 +304,6 @@ MonoBehaviour:
   - {fileID: 2993131350748860981}
   - {fileID: 2993131349513461671}
   - {fileID: 2993131349513461668}
-  - {fileID: 7164656416429289180}
   - {fileID: 6665541262135852635}
   - {fileID: 5185318829911629055}
   remoteLayerName: RemotePlayer
@@ -479,7 +479,7 @@ MonoBehaviour:
   name: Glock
   damage: 10
   range: 100
-  fireRate: 0
+  fireRate: 10
   graphics: {fileID: 2320839166505271597, guid: 6dfc1cc494a047047827dbf001012d7c,
     type: 3}
 --- !u!114 &-843136092746537914
@@ -552,6 +552,18 @@ MonoBehaviour:
   weaponLayerName: Weapon
   weaponHolder: {fileID: 1045822542}
   primaryWeapon: {fileID: -4405244108877010395}
+--- !u!114 &332254714260169540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993131350748860979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9401a7347444a954d9092f3bb5e39ca2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5699180191192445612
 GameObject:
   m_ObjectHideFlags: 0

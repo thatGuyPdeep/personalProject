@@ -552,7 +552,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 3.802e-42, y: 1.05e-43, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -1115,7 +1115,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1603959392
+--- !u!1001 &4593066220765868378
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1261,11 +1261,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AssetId.i15
       value: 184
-      objectReference: {fileID: 0}
-    - target: {fileID: -4405244108877010395, guid: d267e01b705ede940ba565aeeb57c8b8,
-        type: 3}
-      propertyPath: fireRate
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d267e01b705ede940ba565aeeb57c8b8, type: 3}

@@ -70,6 +70,8 @@
     <Compile Include="Assets\Scripts\PlayerSetup.cs" />
     <Compile Include="Assets\Scripts\PlayerShoot.cs" />
     <Compile Include="Assets\Scripts\PlayerWeapon.cs" />
+    <Compile Include="Assets\Util.cs" />
+    <Compile Include="Assets\WeaponGraphics.cs" />
     <Compile Include="Assets\WeaponManager.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/work/personalProject/MultiplayerFPS/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
@@ -641,6 +643,12 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.5f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{A58E4CFF-7604-98D8-1877-1A6FC496CF9A}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
