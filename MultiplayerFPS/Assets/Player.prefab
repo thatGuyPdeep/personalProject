@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045822541}
-  m_LocalRotation: {x: -0.7468539, y: -0.05213452, z: -0.06572044, w: 0.6596758}
-  m_LocalPosition: {x: 0.21984479, y: -0.19099867, z: 0.9861424}
+  m_LocalRotation: {x: -0.7470572, y: -0.04913693, z: -0.06307256, w: 0.6599341}
+  m_LocalPosition: {x: 0.28630129, y: -0.31600863, z: 0.97524303}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2993131349513461669}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -97.154, y: -13.646973, z: 4.067993}
+  m_LocalEulerAnglesHint: {x: -97.154, y: -13.646973, z: 4.5279846}
 --- !u!1 &2993131349513461666
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,9 +249,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2df1c15707e2c46ad807e69d482a3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  lookSensitivity: 3
+  speed: 7
+  lookSensitivity: 2.5
   thrusterForce: 1000
+  thrusterFuelBurnSpeed: 1
+  thrusterFuelRegenSpeed: 0.3
+  environmetMask:
+    serializedVersion: 2
+    m_Bits: 1
   jointSpring: 20
   jointMaxForce: 40
 --- !u!114 &40946059365066658

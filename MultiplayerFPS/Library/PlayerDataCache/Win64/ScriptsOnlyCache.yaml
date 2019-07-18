@@ -7,6 +7,7 @@ ScriptsOnlyBuild:
     - PlayerMotor
     - PlayerSetup
     - PlayerShoot
+    - PlayerUI
     - PlayerWeapon
     - Util
     - WeaponGraphics
@@ -14,7 +15,6 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationBlendTree.Node
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimatorControllerTool
@@ -35,7 +35,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Networking.NetworkTransform
     - UnityEngine.Networking.NetworkTransformChild
   sceneClasses:
-    Assets/built12.unity:
+    Assets/build13.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -114,6 +114,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11426}
     - Class: 114
       Script: {instanceID: 11562}
+    - Class: 114
+      Script: {instanceID: 14412}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -247,7 +249,7 @@ ScriptsOnlyBuild:
     className: NetworkIdentity
   - hash:
       serializedVersion: 2
-      Hash: 5237275bc2a1e1bb5afabf8a5df46031
+      Hash: f9eb95ba0a82ce3935c3562b27aca8f6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -2129,7 +2131,13 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
+  - hash:
+      serializedVersion: 2
+      Hash: d42cb59b8775406d2243b7d6184f7773
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerUI
   platform: 19
   scenePathNames:
-  - Assets/built12.unity
+  - Assets/build13.unity
   playerPath: D:/work/personalProject/MultiplayerFPS/Builds/MultiplayerFPS.exe
