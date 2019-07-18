@@ -29,7 +29,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/build10.unity
     guid: 6fdd62084226a3a498dca9563e9027b0
-  - enabled: 1
+  - enabled: 0
     path: Assets/build11.unity
     guid: 2c04c3bfe36671b4bb234e545af2657a
+  - enabled: 1
+    path: Assets/built12.unity
+    guid: 2f37c0d91608e154e8ebdd3488df25e7
   m_configObjects: {}
