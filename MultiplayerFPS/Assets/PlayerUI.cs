@@ -14,7 +14,7 @@ public class PlayerUI : MonoBehaviour
 
     void Update()
     {
-        SetFuelAmount (controller.GetThrusterFuelAmount());
+        SetFuelAmount(controller.GetThrusterFuelAmount());
         
     }
 
