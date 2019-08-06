@@ -35,7 +35,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/built12.unity
     guid: 2f37c0d91608e154e8ebdd3488df25e7
-  - enabled: 1
+  - enabled: 0
     path: Assets/build13.unity
     guid: 80365604f39a2cf4fbe7e4063ff6ddbf
+  - enabled: 1
+    path: Assets/Lobby.unity
+    guid: aad160a22c4adcd46b8e34e055d342c4
+  - enabled: 1
+    path: Assets/Main.unity
+    guid: ba6086f06819187489f82d716c1c9f6c
   m_configObjects: {}

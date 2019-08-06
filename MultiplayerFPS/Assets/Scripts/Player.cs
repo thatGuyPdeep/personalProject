@@ -32,18 +32,42 @@ public class Player : NetworkBehaviour
     [SerializeField]
     private GameObject spawnEffect;
 
-    public void Setup()
+    private bool firstSetup = true;
+
+    public void SetupPlayer()
     {
-        wasEnabled = new bool[disableOnDeath.Length];
-        for (int i = 0; i < wasEnabled.Length; i++)
+        if (isLocalPlayer)
         {
-            wasEnabled[i] = disableOnDeath[i].enabled;
+            //Switch Camera
+            GameManager.instance.SetSceneCameraActive(true);
+            GetComponent<PlayerSetup>().playerUIInstance.SetActive(false);
         }
 
-        SetDefaults();
+        CmdBroadCastNewPlayerSetup();
     }
 
+    [Command]
+    private void CmdBroadCastNewPlayerSetup()
+    {
+        RpcSetupPlayerOnAllClients();
+    }
+
+    [ClientRpc]
+    private void RpcSetupPlayerOnAllClients()
+    {
+        if (firstSetup)
+        {
+            wasEnabled = new bool[disableOnDeath.Length];
+            for (int i = 0; i < wasEnabled.Length; i++)
+            {
+                wasEnabled[i] = disableOnDeath[i].enabled;
+            }
+            firstSetup = false;
+        }
+        SetDefaults();
+    }
     
+    /*
     void Update()
     {
         if (!isLocalPlayer)
@@ -53,9 +77,9 @@ public class Player : NetworkBehaviour
             RpcTakeDamage(9999);
         }
     }
-    
+    */
 
-    [ClientRpc]
+    [ClientRpc] //called on all clients
     public void RpcTakeDamage(int _amount)
     {
         if (isDead)
@@ -96,13 +120,6 @@ public class Player : NetworkBehaviour
         GameObject _gfxIns = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(_gfxIns, 3f);
 
-        //Switch Camera
-        if (isLocalPlayer)
-        {
-            GameManager.instance.SetSceneCameraActive(true);
-            GetComponent<PlayerSetup>().playerUIInstance.SetActive(false);
-        }
-
         Debug.Log(transform.name + " is DEAD!");
 
         //CALL RESPAWN METHOD
@@ -117,7 +134,9 @@ public class Player : NetworkBehaviour
         transform.position = _spawnPoint.position;
         transform.rotation = _spawnPoint.rotation;
 
-        SetDefaults();
+        yield return new WaitForSeconds(0.1f);
+      
+        SetupPlayer();
 
         Debug.Log(transform.name + " respawned");
     }

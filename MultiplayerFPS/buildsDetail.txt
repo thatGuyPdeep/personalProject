@@ -98,3 +98,25 @@ Prevent weapon from clipping object
 
 Build 11
 08-July-2019
+
+Script for switching weapon
+Shooting graphics
+Rpaid fire
+
+
+Build 12
+08-July-2019
+
+Add muzzle flash
+
+Build 13
+08-July-2019
+Add fuel Mechanism
+
+Build 14
+08-July-2019
+
+Add explosion effect when player die
+Switch camera when player die
+disabled UI when player is dead
+Add effect when pllayer respawn.

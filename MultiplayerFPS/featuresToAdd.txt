@@ -1,7 +1,3 @@
-RapidFire
-Reload
-Fuel
-Explosions
 Matchmaking
 Hosting
 Joining
